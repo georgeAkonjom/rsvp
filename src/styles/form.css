@@ -1,0 +1,19 @@
+#formWrapper {
+	padding: 1rem 3rem;
+}
+
+label {
+	font-weight: 800;
+	font-size: 0.8rem;
+}
+
+#plusonecheck{
+	display: block;
+	margin-left: 1rem;
+}
+
+.plusOneContain {
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+}

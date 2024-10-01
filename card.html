@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta
+			charset="utf-8"
+			name="viewport"
+			content="width=device-width, initial-scale = 1"
+		/>
+		<title>Birthday Invite, Rsvp</title>
+		<link rel="stylesheet" href="./src/styles/styles.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<audio
+			id="music"
+			preload="auto"
+			src="./src/assets/Celebration-(JustNaija.com).mp3"
+		></audio>
+		<div
+			id="main"
+			class="maincontainer"
+			onclick="playAudio()"
+		>
+			<p class="call-out">Tap the card to View Invite</p>
+			<div class="thecard">
+				<div class="thefront">
+					<p>
+						It would be an honour to have you join me in
+						celeberating what God has done in my life. I
+						hope You can make it.
+					</p>
+					<img
+						class="seal"
+						src="./src/assets/12-Burgundy-Red-sealing-wax-beads-3.png"
+						alt=""
+					/>
+				</div>
+
+				<div class="theback">
+					<img class="imgcard" src="./src/assets/card1.png" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<div><a id="rsvplink" href="index.html">rsvp test link</a></div>
+		<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+		<script src="confetti.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

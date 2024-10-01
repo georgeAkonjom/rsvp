@@ -1,0 +1,116 @@
+body {
+	background: rgb(255, 249, 237);
+	background: linear-gradient(
+		83deg,
+		rgba(255, 249, 237, 1) 0%,
+		rgba(253, 187, 45, 1) 100%
+	);
+}
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer {
+	position: absolute;
+	background: none;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+	.maincontainer {
+		width: 90vw;
+		height: 112.5vw;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.maincontainer {
+		width: 58vh;
+		height: 72.5vh;
+	}
+}
+
+.call-out {
+	font-size: 1rem;
+	font-family: "Great Vibes", cursive;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+	transform: rotateY(180deg);
+	z-index: 20;
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background: rgba(0, 4, 66, 1);
+	color: white;
+	font-size: 10vh;
+}
+
+.seal {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40%;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background: #fafafa;
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+}
+
+.imgcard {
+	width: 100%;
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+
+.thefront p {
+	font-family: "Great VIbes", cursive;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	font-weight: normal;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.thefront .call-out {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6rem;
+}
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */

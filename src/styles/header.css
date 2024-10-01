@@ -1,0 +1,14 @@
+.headerText{
+	padding-top: 3rem;
+	padding-bottom: 2rem ;
+
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+}
+
+.tiny {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.8rem;
+}

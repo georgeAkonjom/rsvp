@@ -25,13 +25,13 @@ function AttendeeForm() {
 					lastNameRef.current.value
 			)
 		) {
-			let required =
-				"Fill in First and Last Name.";
+			let required = "Fill in First and Last Name.";
 			setRequired(required);
 		} else if (submitted == "Submitted!") {
 			let required = "You're already on the list. Refresh!";
 			setRequired(required);
 		} else {
+			let submitted = "Submitted!";
 			const docRef = await addDoc(
 				collection(db, "attendees"),
 				{
@@ -41,7 +41,7 @@ function AttendeeForm() {
 				}
 			);
 			console.log("Document written with ID: ", docRef.id);
-			let submitted = "Submitted!";
+
 			setSubmitted(submitted);
 			console.log(
 				firstNameRef.current.value,
@@ -60,7 +60,7 @@ function AttendeeForm() {
 					className="textField"
 					id="firstName"
 					ref={firstNameRef}
-					placeholder="Faith"
+					placeholder="Jane"
 					type="text"
 					autoCapitalize="words"
 				/>
@@ -72,7 +72,7 @@ function AttendeeForm() {
 					className="textField"
 					id="lastName"
 					ref={lastNameRef}
-					placeholder="Noretey"
+					placeholder="Doe"
 					type="text"
 					autoCapitalize="words"
 				/>
